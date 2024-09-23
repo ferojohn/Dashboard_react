@@ -1,0 +1,32 @@
+
+.selecter_wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 14px 34px;
+}
+
+ @media only screen and (max-width: 621px) 
+{
+    .selecter_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 14px 34px;
+    }
+}
+
+
+@media only screen and (min-width: 662px) and (max-width: 767px) {
+    .selecter_wrapper {
+      flex-direction: column;
+      justify-content: space-between;
+        padding: 14px 34px;
+    }
+    }
+
+    @media only screen and (max-width: 661px) {
+    .selecter_wrapper {
+        display: block;
+    }
+    }

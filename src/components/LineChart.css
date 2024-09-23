@@ -1,0 +1,52 @@
+.chart-container {
+  background-color: #ffff;
+  border-radius: 0.4em;
+  margin: 41px -35px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  max-width: 1421px;
+}
+
+  .linechart-heading, .sub-heading {
+    margin-left: 10px;
+    padding: 10px;
+  }
+
+  @media only screen and (max-width: 621px) {
+  .chart-container {
+    margin: 41px 9px;
+    max-width: 528px;
+}
+}
+
+@media only screen and (min-width: 662px) and (max-width: 767px) {
+  .chart-container {
+    display: block;
+    margin: 40px 10px;
+}
+}
+
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+  .chart-container {
+    margin: 41px 14px;
+  }
+  }
+
+  @media only screen and (max-width: 661px) {
+    .chart-container {
+      width: 100%;
+      margin: 53px 26px 18px -2px;
+  }
+  }
+
+  @media only screen and (max-width: 598px) {
+    .chart-container {
+      width: 79%;
+      margin: 94px 7px 16px 15px;
+      overflow-x: auto; 
+      white-space: nowrap; 
+    }
+  }
+  
+
+  

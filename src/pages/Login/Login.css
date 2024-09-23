@@ -1,0 +1,252 @@
+.App {
+  text-align: center;
+  background-image: url(../../assests/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 738px;
+  gap: 0px;
+  border-radius: 30px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #fff;
+  max-width: 513px;
+  margin: auto;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  transform: translateY(5.9rem);
+  border-radius: 3%;
+}
+
+.App-header:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.logo {
+  transform: translateY(2.9rem);
+  display: flex;
+  justify-content: center;
+}
+
+.input-box {
+  padding: 7px 152px 7px 45px;
+  border-radius: 10px;
+  border: 1px solid #ddd1d1;
+}
+
+form {
+  line-height: 36px;
+}
+
+.email-label, .password-lebel {
+  display: flex;
+  margin-left: 17px;
+  color: #303030;
+  margin-bottom: 7px;
+}
+
+.forgot-password {
+  position: relative;
+  bottom: 33px;
+  left: 116px;
+  color: #f43899;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  display: block;
+  text-decoration: none;
+}
+
+.envelope, .password {
+  position: relative;
+  left: 8%;
+  top: -5px;
+}
+
+.password-filed {
+  margin-top: 8px;
+}
+
+.password-label {
+  margin-right: 267px;
+}
+
+.remember-me {
+  display: flex;
+  justify-content: end;
+  padding-bottom: 5px;
+  margin-top: -12px;
+}
+
+.remember-me>label {
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+.signin-btn {
+  background: #5932ea;
+  color: #fff;
+  border: none;
+  padding: 7px 30px 7px 30px;
+  width: 97%;
+  margin-left: 12px;
+  margin-bottom: 70px;
+  border-radius: 10px;
+}
+
+h2 {
+  margin-top: 65px;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .App {
+    height: 738px;
+  }
+
+  .App-header {
+    padding: 40px;
+  }
+
+  .input-box {
+    padding: 8px 147px 8px 34px;
+}
+
+  .input-box::placeholder {
+    padding-left: 30px;
+  }
+
+  .email-label, .password-lebel {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+  .forgot-password {
+    left: 112px;
+    font-size: 13px;
+    top: -35px;
+}
+
+.envelope, .password {
+  left: 9%;
+  top: -3px;
+}
+
+  .remember-me {
+    padding-bottom: 5px;
+    margin-top: -12px;
+  }
+
+  .signin-btn {
+    padding: 8px 30px 8px 30px;
+    width: 97%;
+    margin-left: 12px;
+    margin-bottom: 70px;
+}
+
+}
+
+@media only screen and (min-width: 662px) and (max-width: 767px) {
+  .App {
+    height: 738px;
+    border-radius: 30px 0px 0px 0px;
+  }
+
+  .input-box {
+    padding: 13px 104px 12px 59px;
+  }
+
+  .envelope, .password {
+    left: 9%;
+    top: -5px;
+}
+
+  .forgot-password {
+    bottom: 38px;
+    left: 66px;
+  }
+
+  .email-label, .password-lebel {
+    margin-left: 21px;
+    margin-bottom: 8px;
+}
+
+}
+@media only screen and (max-width: 621px) {
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+
+  body, html {
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+  }
+
+  .App {
+      padding: 10px;
+      overflow-y: auto;
+      width: 100vw; 
+  }
+
+  .App-header {
+    width: 90%;
+    padding: 15px;
+    margin-top: 59px;
+}
+
+.input-box {
+  width: 100%;
+  padding: 8px 53px;
+}
+
+.input-box::placeholder {
+  font-size: 14px; 
+}
+
+.envelope, .password {
+  left: -42%;
+  top: 41px;
+}
+
+.forgot-password {
+  bottom: 34px;
+  left: 82px;
+  font-size: 11px;
+}
+  .email-label, .password-lebel {
+    margin-left: 0;
+    font-size: 14px;
+    margin-bottom: -9px;
+}
+
+  .remember-me {
+      padding-bottom: 5px;
+  }
+
+  .signin-btn {
+    padding: 10px;
+    margin: 20px 0;
+}
+
+  html, body {
+      height: 100%;
+      overflow-y: auto;
+  }
+}
