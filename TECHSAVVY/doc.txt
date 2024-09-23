@@ -1,0 +1,74 @@
+*created a file with the help of the command: [npx create-react-app my-app]
+
+*Install ESLint and Prettier with the help of: 
+  [npm install eslint prettier eslint-plugin-prettier eslint-config-prettier --save-dev]
+
+ *Router : [npm install react-router-dom]
+
+
+ const datasets = [
+  {
+    label: 'ROAS',
+    data: data.result.series[0]?.data.map(value => value) || [],
+    fill: false,
+    borderColor: 'pink',
+    tension: 0.4, // Increased tension for a wavy line
+    pointStyle: 'circle',
+    pointRadius: 5,
+  },
+  {
+    label: 'ACOS',
+    data: data.result.series[1]?.data.map(value => value) || [],
+    fill: false,
+    borderColor: 'yellow',
+    tension: 0.4, // Increased tension for a wavy line
+    pointStyle: 'diamond',
+    pointRadius: 5,
+  },
+  {
+    label: 'CR%',
+    data: data.result.series[2]?.data.map(value => value) || [],
+    fill: false,
+    borderColor: 'blue',
+    tension: 0.4, // Increased tension for a wavy line
+    pointStyle: 'rectRot',
+    pointRadius: 5,
+  },
+];
+
+const options = {
+  responsive: true,
+  scales: {
+    x: {
+      grid: {
+        display: true, // Show x-axis grid lines
+        color: 'rgba(0, 0, 0, 0.1)', // Set grid line color
+        lineWidth: 1, // Set grid line width
+      },
+    },
+    y: {
+      beginAtZero: true,
+      ticks: {
+        stepSize: 1,
+        callback: (value) => {
+          if (value % 2000 === 0) {
+            return `${value / 1000}k`;
+          }
+        },
+      },
+      title: {
+        display: true,
+        text: 'Value',
+      },
+    },
+  },
+  plugins: {
+    legend: {
+      position: 'top',
+    },
+    title: {
+      display: true,
+      text: 'Line Chart with API Data',
+    },
+  },
+};
